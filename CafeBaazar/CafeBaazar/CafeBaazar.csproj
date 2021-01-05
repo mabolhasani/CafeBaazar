@@ -2,6 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>CafeBaazarApi</PackageId>
+    <Authors>Mohammad Abolhasani</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>cafebaazar.png</PackageIcon>
+    <PackageTags>git</PackageTags>
+    <RepositoryType>https://github.com/mabolhasani/CafeBaazar</RepositoryType>
+    <Copyright>Copyright © Mohammad Abolhasani 2021</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Icon\cafebaazar.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
