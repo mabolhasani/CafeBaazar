@@ -35,7 +35,7 @@ For verify canceling subscription you can call this methods [docs](https://devel
 ```csharp
 var result = await client.CancelSubscriptionAsync("Subscription id", "Purchase token");
 ```
-** For verify purchase or canceling one, you do not need to get access token and pass it to methods,  it'll generate access token for you on every request** 
+**For verify purchase or canceling one, you do not need to get access token and pass it to methods,  it'll generate access token for you on every request** 
 
 ### Usage of the result
 ```csharp
