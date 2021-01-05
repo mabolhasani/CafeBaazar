@@ -6,10 +6,12 @@
     <Authors>Mohammad Abolhasani</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>cafebaazar.png</PackageIcon>
-    <PackageTags>git</PackageTags>
-    <RepositoryType>https://github.com/mabolhasani/CafeBaazar</RepositoryType>
+    <PackageTags></PackageTags>
+    <RepositoryType>git</RepositoryType>
     <Copyright>Copyright © Mohammad Abolhasani 2021</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/mabolhasani/CafeBaazar</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
