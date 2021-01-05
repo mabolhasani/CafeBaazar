@@ -1,5 +1,5 @@
-# Cafebazaar Rest Api Documentation 
-This is a simple C# implantation of Cafebazaar rest api
+# Cafebazaar Rest API Documentation 
+This is a simple C# implantation of Cafebazaar Rest API,
 for more information you can go to cafebazaar documentation [page](https://developers.cafebazaar.ir/en/docs/developer-api-v2-introduction/developer-api-v2-getting-started/) 
 
 # Installation 
@@ -25,15 +25,15 @@ var client = new CafebazaarClient(config);
 ```
 For verify Inapp purchase you can call this methods [docs](https://developers.cafebazaar.ir/en/docs/developer-api-v2-introduction/developer-api-v2-ref-validate/)
 ```csharp
-var result = client.VerifyInappPurchaseAsync("ProductId", "Purchase token");
+var result = await client.VerifyInappPurchaseAsync("ProductId", "Purchase token");
 ```
 For verify Subscription purchase you can call this methods [docs](https://developers.cafebazaar.ir/en/docs/developer-api-v2-introduction/developer-api-v2-ref-get-subs/)
 ```csharp
-var result = client.VerifySubscriptionPurchaseAsync("Subscription id", "Purchase token");
+var result = await client.VerifySubscriptionPurchaseAsync("Subscription id", "Purchase token");
 ```
 For verify canceling subscription you can call this methods [docs](https://developers.cafebazaar.ir/en/docs/developer-api-v2-introduction/developer-api-v2-ref-cancel-subs/)
 ```csharp
-var result = client.CancelSubscriptionAsync("Subscription id", "Purchase token");
+var result = await client.CancelSubscriptionAsync("Subscription id", "Purchase token");
 ```
 **For verify purchase or canceling one, you do not need to get access token and pass it to methods,  it'll generate access token for you on every request** 
 
