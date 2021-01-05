@@ -23,15 +23,15 @@ Then pass it to CafebazaarClient
 ```csharp
 var client = new CafebazaarClient(config);
 ```
-For verify Inapp purchase you can call this methods [docs](https://developers.cafebazaar.ir/en/docs/developer-api-v2-introduction/developer-api-v2-ref-validate/)
+For verify Inapp purchase you can call this method [Cafebazaar document](https://developers.cafebazaar.ir/en/docs/developer-api-v2-introduction/developer-api-v2-ref-validate/)
 ```csharp
 var result = await client.VerifyInappPurchaseAsync("ProductId", "Purchase token");
 ```
-For verify Subscription purchase you can call this methods [docs](https://developers.cafebazaar.ir/en/docs/developer-api-v2-introduction/developer-api-v2-ref-get-subs/)
+For verify Subscription purchase you can call this method [Cafebazaar document](https://developers.cafebazaar.ir/en/docs/developer-api-v2-introduction/developer-api-v2-ref-get-subs/)
 ```csharp
 var result = await client.VerifySubscriptionPurchaseAsync("Subscription id", "Purchase token");
 ```
-For verify canceling subscription you can call this methods [docs](https://developers.cafebazaar.ir/en/docs/developer-api-v2-introduction/developer-api-v2-ref-cancel-subs/)
+For verify canceling subscription you can call this method [Cafebazaar document](https://developers.cafebazaar.ir/en/docs/developer-api-v2-introduction/developer-api-v2-ref-cancel-subs/)
 ```csharp
 var result = await client.CancelSubscriptionAsync("Subscription id", "Purchase token");
 ```
