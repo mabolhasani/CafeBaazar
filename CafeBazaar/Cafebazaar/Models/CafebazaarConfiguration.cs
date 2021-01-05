@@ -1,6 +1,6 @@
-﻿namespace CafeBaazar.Models
+﻿namespace Cafebazaar.Models
 {
-    public class CafeBaazarConfiguration
+    public class CafebazaarConfiguration
     {
         public string ClientId { get; }
 
@@ -10,7 +10,7 @@
 
         public string RefreshToken { get; }
 
-        public CafeBaazarConfiguration(string clientId,string clientSecret, string packageName,string refreshToken)
+        public CafebazaarConfiguration(string clientId,string clientSecret, string packageName,string refreshToken)
         {
             ClientId = clientId;
             ClientSecret = clientSecret;

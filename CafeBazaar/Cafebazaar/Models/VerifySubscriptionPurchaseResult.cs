@@ -1,4 +1,4 @@
-﻿namespace CafeBaazar.Models
+﻿namespace Cafebazaar.Models
 {
     public class VerifySubscriptionPurchaseResult
     {

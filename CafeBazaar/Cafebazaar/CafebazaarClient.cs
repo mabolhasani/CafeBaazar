@@ -1,19 +1,19 @@
-﻿using CafeBaazar.Models;
+﻿using Cafebazaar.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace CafeBaazar
+namespace CafeBazaar
 {
-    public class CafeBaazarClient
+    public class CafebazaarClient
     {
-        private readonly CafeBaazarConfiguration _configuration;
+        private readonly CafebazaarConfiguration _configuration;
         private readonly HttpClient _client;
         private const string BaseUrl = "https://pardakht.cafebazaar.ir/devapi/v2";
 
-        public CafeBaazarClient(CafeBaazarConfiguration configuration)
+        public CafebazaarClient(CafebazaarConfiguration configuration)
         {
             _configuration = configuration;
             _client = new HttpClient();

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace CafeBaazar.Models
+namespace Cafebazaar.Models
 {
     public class SubscriptionPurchaseResult
     {

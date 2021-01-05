@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace CafeBaazar.Models
+namespace Cafebazaar.Models
 {
     public class ErrorResult
     {
