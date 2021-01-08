@@ -27,7 +27,7 @@ var client = new CafebazaarClient(config);
 ```
 For verify in-app purchases you can call this method:
 ```csharp
-var result = await client.VerifyInappPurchaseAsync("Product_id", "purchase_token");
+var result = await client.VerifyInappPurchaseAsync("product_id", "purchase_token");
 ```
 And for verify subscription purchase you can call:
 ```csharp
