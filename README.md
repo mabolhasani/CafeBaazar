@@ -21,13 +21,13 @@ var config = new CafebazaarConfiguration(
                 "client_id", "client_secret"
                 "package_name", "refresh_token");
 ```
-Then pass it to CafebazaarClient 
+Then pass it to CafebazaarClient:
 ```csharp
 var client = new CafebazaarClient(config);
 ```
 For verify in-app purchases you can call this method:
 ```csharp
-var result = await client.VerifyInappPurchaseAsync("ProductId", "purchase_token");
+var result = await client.VerifyInappPurchaseAsync("Product_id", "purchase_token");
 ```
 And for verify subscription purchase you can call:
 ```csharp
