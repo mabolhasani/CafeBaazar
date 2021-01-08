@@ -15,31 +15,31 @@ dotnet add package CafebazaarApi --version 1.0.0
 ```
 
 # Usage 
-First of all you must create configuration instance and initialize it with proper config
+Create configuration instance and initialize it with proper config:
 ```csharp
 var config = new CafebazaarConfiguration(
-                "Your client id", "Your client secret"
-                "Your package name", "Your refresh token");
+                "client_id", "client_secret"
+                "package_name", "refresh_token");
 ```
 Then pass it to CafebazaarClient 
 ```csharp
 var client = new CafebazaarClient(config);
 ```
-For verify Inapp purchase you can call this method
+For verify in-app purchases you can call this method:
 ```csharp
-var result = await client.VerifyInappPurchaseAsync("ProductId", "Purchase token");
+var result = await client.VerifyInappPurchaseAsync("ProductId", "purchase_token");
 ```
-And for verify Subscription purchase you can call this
+And for verify subscription purchase you can call:
 ```csharp
-var result = await client.VerifySubscriptionPurchaseAsync("Subscription id", "Purchase token");
+var result = await client.VerifySubscriptionPurchaseAsync("subscription_id", "purchase_token");
 ```
-And finally for canceling subscription you can call this
+And finally for canceling subscription you can call:
 ```csharp
-var result = await client.CancelSubscriptionAsync("Subscription id", "Purchase token");
+var result = await client.CancelSubscriptionAsync("subscription_id", "purchase_token");
 ```
-**Access token will be generated and passed it internally in all methods based on your refresh token** 
+**Access token will be generated and passed internally to methods above using your refresh token** 
 
-Then you can check the result of your request and and do what ever you want :)
+Then you can check the result of your request and it's all set up!
 ```csharp
  if (result.Successful)
  {
